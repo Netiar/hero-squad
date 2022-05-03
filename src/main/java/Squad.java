@@ -45,7 +45,7 @@ public class Squad {
     }
 
     public boolean checkForMaximumMembers(){
-        return hMaxSize<= this.hMaxSize;
+        return true;
     }
 }
 
