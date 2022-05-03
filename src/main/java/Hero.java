@@ -3,26 +3,29 @@ import java.util.List;
 
 public class Hero {
     private String hName;
-    private int hPower;
+    private String hPower;
     private int hAge;
     private int hWeakness;
     private int hId;
 
     public static List<Hero> instances = new ArrayList<Hero>();
 
-    public Hero(String name, int power, int age, int weakness, int id) {
+    public Hero(String name, String power, int age, String weakness) {
         this.hName = name;
-        this.hPower = power;
+        this.hPower = getName();
         this.hAge = age;
-        this.hWeakness = weakness;
-        this.hId = id;
+        this.hWeakness = getWeakness();
+        this.hId = instances.size() ;
+    }
+
+    public Hero(String name, String power, String age, String weakness, String id) {
     }
 
     public String getName() {
         return this.hName;
     }
 
-    public int getPower() {
+    public String getPower() {
         return this.hPower;
     }
 
@@ -56,7 +59,7 @@ public class Hero {
 
     public static void update(int id, String name, int power, int age, int weakness) {
         instances.get(id - 1).hName = name;
-        instances.get(id - 1).hPower = power;
+        instances.get(id - 1).hPower = String.valueOf(power);
         instances.get(id - 1).hAge = age;
         instances.get(id - 1).hWeakness = weakness;
     }
