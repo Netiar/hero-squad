@@ -18,7 +18,7 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             ArrayList<Squad> squads = Squad.getAll();
             model.put("squads", squads);
-            return new ModelAndView(model, "index.hbs");
+            return new ModelAndView(model, "layout.hbs");
         }, new HandlebarsTemplateEngine());
 
     }
