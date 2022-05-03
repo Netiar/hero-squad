@@ -10,10 +10,42 @@ public class Squad {
 
 
     public Squad(int hMaxSize, String hName, String hCause) {
-        this.hMaxSize = hMaxSize;
+        this.hMaxSize = 3;
         this.hName = hName;
         this.hCause = hCause;
-        this.hId = hId;
+        this.hId = instances.size();
+    }
+
+    public int getId() {
+        return hId;
+    }
+
+    public int getMaxSize() {
+        return hMaxSize;
+    }
+
+    public String getName() {
+        return hName;
+    }
+
+    public String getCause() {
+        return hCause;
+    }
+
+    public static List<Squad> all() {
+        return instances;
+    }
+
+    public static void clear() {
+        instances.clear();
+    }
+
+    public static Squad find(int id) {
+        return instances.get(id - 1);
+    }
+
+    public boolean checkForMaximumMembers(){
+        return hMaxSize<= this.hMaxSize;
     }
 }
 
