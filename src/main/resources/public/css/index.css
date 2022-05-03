@@ -9,7 +9,8 @@
     box-sizing:border-box;
 }
 
-body{
-    overflow-x: hidden;
-
+.img5
+{
+    background-size: cover;
+    background-repeat: no-repeat;
 }
