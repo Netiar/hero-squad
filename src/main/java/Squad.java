@@ -2,6 +2,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Squad {
+    private static ArrayList<Squad> all;
     private int hMaxSize;
     private String hName;
     private String hCause;
@@ -15,6 +16,11 @@ public class Squad {
         this.hCause = hCause;
         this.hId = instances.size();
     }
+
+    public static ArrayList<Squad> getAll() {
+        return all;
+    }
+
 
     public int getId() {
         return hId;
