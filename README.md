@@ -15,7 +15,7 @@ This project basically covers the objects within objects concept. You have to re
 ## Prerequisites
 
 - Basic Git knowledge, including an installed version of Git.
-- Your application must run on the OpenJDK version 6, 7 or 8.
+- Your application must run on the OpenJDK version 11 or higher
 
 ## Technologies Used
 
