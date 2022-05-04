@@ -5,12 +5,46 @@
 {
     margin:0;
     padding:0;
-    font-family:Arial, Helvetica, sans-serif;
     box-sizing:border-box;
 }
 
-.img5
+body
 {
-    background-size: cover;
-    background-repeat: no-repeat;
+     width: 100%;
+     background-color: #e9ecef;
+     background-image: url(../images/batman5.jpg);
+     background-position:center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     text-align:center;
+     color: #fff;
 }
+
+.b2
+{
+    color: #000;
+    font-size: 40px;
+    font-style: italic;
+    padding-top: 20vh;
+}
+
+.hero
+{
+    color: #000;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.form-control
+{
+    width: 45%;
+    justify-content: center;
+    margin:auto;
+}
+
+
+
+
+
+
+
