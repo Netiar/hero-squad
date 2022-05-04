@@ -21,6 +21,14 @@ public class Squad {
         return all;
     }
 
+    public static Squad findById(String squadName) {
+        for (Squad squad : instances) {
+            if (squad.getName().equals(squadName)) {
+                return squad;
+            }
+        }return find(1);
+    }
+
 
     public int getId() {
         return hId;
