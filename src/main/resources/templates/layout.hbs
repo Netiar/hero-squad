@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,6 +12,7 @@
     <title>Squad</title>
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -19,17 +22,85 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="/Squad">squad</a>
+                <a class="nav-link" href="/index.hbs">Heroes</a>
+                <a class="nav-link" href="/Squad.hbs">Squad</a>
 
 
             </div>
         </div>
     </div>
 </nav>
-<div class="b1">
-    <img src="images/batman5.jpg" id="img5" alt="">
+
+
     
+
+<div class="container">
+    <div class="row">
+
+        <div class="b2">
+            <h2 class="b21" >Hero squad.</h2>
+            <h4 class="b22" >Let's choose some heroes and assign them squads.</h4>
+        </div>
+        <br>
+        <div class="btn-index">
+            <form action="#" method="post">
+                <br> <br>
+                <div class="form-group ">
+                    <label for="hero" class="hero">Hero Name</label>
+                    <input type="text" class="form-control" name="hero" id="hero" required>
+                </div>
+                <div class="form-group">
+                    <label for="age" class="hero">Age</label>
+                    <input type="number" class="form-control" name="Age" id="age" required>
+
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="task" class="hero">Power</label>
+                    <input type="text" class="form-control" name="Power" id="power" required>
+                </div>
+                <br> <br>
+                <button
+                        type="submit"
+                        class="btn btn-dark"
+                >
+                    Add Hero
+                </button>
+
+
+
+            </form>
+            <form action="#" method="post">
+                <br> <br>
+                <div class="form-group ">
+                    <label for="squad" class="hero">Squad Name</label>
+                    <input type="text" class="form-control" name="squad" id="squad" required>
+                </div>
+                <div class="form-group">
+                    <label for="size" class="hero">Squad Size</label>
+                    <input type="number" class="form-control" name="size" id="size" required>
+
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="task" class="hero">Squad Mission</label>
+                    <input type="text" class="form-control" name="task" id="task" required>
+                </div>
+                <br />
+
+                <button
+                        type="submit"
+                        class="btn btn-dark"
+                >
+                    Add Squad
+                </button>
+            </form>
+
+        </div>
+    </div>
 </div>
+
+
 
 
 
@@ -45,6 +116,8 @@
 
 
 </html>
+
+
 
 
 
